@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    form(action="/add", method="POST")
+        input(type="text", placeholder="Name:", name="Name")
+        input(type="text", placeholder="Country Code:", name="CountryCode")
+        input(type="text", placeholder="District:", name="District")
+        input(type="text", placeholder="Population:", name="Population")
+
+        input(type="submit", value='Add')

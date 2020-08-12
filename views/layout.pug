@@ -1,0 +1,19 @@
+doctype html
+head
+  title Test | #{title}
+  meta(charset="utf-8")
+  link(rel="stylesheet", href="css/main.css")
+
+  body
+    a(href="/addCity")
+      h2 Add a city.
+
+    a(href="/")
+      h2 Pick a city pls: 
+    form(action="/city", method="POST")
+      input(type="text", placeholder="Cityname", name="cityname")
+
+      input(type="submit", value='Search')
+    hr
+    p.error #{error}
+    block content
